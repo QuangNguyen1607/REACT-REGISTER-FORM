@@ -1,0 +1,16 @@
+.custom-radio
+	width: 10px
+	height: 10px
+	background-color: #fff
+	> div
+		box-shadow: 0 0 0 5px white
+	input:checked + div
+		@apply bg-blue-500
+		box-shadow: 0 0 0 2.5px white, 0 0 0 5px rgba(59,130,246,.3)
+.custom-checkbox-square
+	width: 26px
+	height: 26px
+.custom-checkbox
+	input:checked + div
+		.custom-checkbox-square
+			background-color: #2979FF
